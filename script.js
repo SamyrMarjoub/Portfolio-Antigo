@@ -15,6 +15,10 @@ const endresume = document.querySelector('.end-resume')
 const msg = document.querySelector('#msg')
 const innerCarac = document.querySelector('.caractere')
 const mobileimg = document.querySelector('.bola')
+const buttone = document.querySelector('.buttone').addEventListener('click', function(){
+    window.scrollTo(0, 3100)
+    
+})
 const workmobile = document.querySelector('.work-mobile').addEventListener('click', function () {
     window.scrollTo(0, 800)
 })
