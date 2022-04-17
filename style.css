@@ -965,6 +965,12 @@ textarea {
     .name {
         font-size: 30px;
     }
+    .div-text{
+        margin-top: -160px;
+    }
+    .resume{
+        line-height: 50px;
+    }
 }
 
 @media screen and (max-width:400px) {
