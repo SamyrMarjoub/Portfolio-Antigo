@@ -6,4 +6,6 @@ Repositorio destinado a página do meu portfolio
 <img src='./images/desktop-preview.png'>
 <br>
 <h1>Preview da página em mobile: </h1>
-<img align='center' src='./images/mobile-preview.png' >
+<div align='center'> 
+<img src='./images/mobile-preview.png' >
+</div>
