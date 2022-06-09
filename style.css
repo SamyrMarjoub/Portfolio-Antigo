@@ -87,20 +87,23 @@ html {
 }
 
 main {
-    width: 80%;
-    margin-left: 10%;
-    height: 670px;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: flex-end;
 }
 
 .div-text {
     color: white;
+    width: 50%;
 }
 
 .main-container {
     display: flex;
-    width: 100%;
-    margin-top: 200px;
-    height: 670px;
+    height: 100%;
+    width: 80%;
+    margin-left: 10%;
+    align-items: center;
 
 }
 
@@ -108,9 +111,9 @@ main {
     width: 50%;
     background-image: url('./images/undraw_mobile_application_mr-4-r.svg');
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 0px;
-
+    background-size: 950px;
+    background-position: 50% bottom;
+    height: 100%;
 
 }
 
@@ -135,6 +138,13 @@ main {
     height: 40px;
     width: 4px;
     animation: cursor 0.4s infinite;
+}
+
+.bola {
+    background-image: url('./images/terra.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .js .anime {
@@ -659,25 +669,33 @@ textarea {
     display: none;
 }
 
-@media screen and (max-width:1480px) {
-    .div-img {
-        background-size: 900px;
-        background-position: -150px 80px;
-        width: 60%;
+@media screen and (max-width:1583px) {
+    .resume {
+        font-size: 40px;
+        line-height: 70px;
     }
 
     .name {
-        font-size: 43px;
+        font-size: 40px;
     }
+}
+
+@media screen and (max-width:1480px) {
+    /* .div-img {
+        background-size: 900px;
+        background-position: -150px 80px;
+        width: 60%;
+    } */
+
 
     .resume {
         font-size: 43px;
-        line-height: 60px;
+
     }
 
-    .div-text {
+    /* .div-text {
         margin-top: 100px;
-    }
+    } */
 }
 
 @media screen and (max-width:1380px) {
@@ -689,13 +707,15 @@ textarea {
         font-size: 38px;
         line-height: 65px;
     }
+
+    .div-img {
+        background-size: 850px;
+    }
 }
 
 @media screen and (max-width:1220px) {
     .div-img {
-        width: 70%;
-        background-position: -200px 80px;
-        background-size: 900px;
+        background-size: 750px;
     }
 
     .name {
@@ -704,10 +724,7 @@ textarea {
 
     .resume {
         font-size: 30px;
-    }
-
-    .div-text {
-        margin-top: 100px;
+        line-height: 60px;
     }
 
     header {
@@ -717,19 +734,24 @@ textarea {
     }
 }
 
+@media screen and (max-width:1100px) {
+    .resume {
+        line-height: 55px;
+    }
+}
+
 @media screen and (max-width:1024px) {
     .main-container {
         flex-direction: column;
-        height: auto;
         width: 100%;
         margin-left: 0;
-        /* text-align: center; */
+        text-align: center;
+        justify-content: center;
     }
 
     .div-text {
         width: 100%;
-        margin-top: -100px;
-
+        margin-top: 10px;
     }
 
     .name {
@@ -742,10 +764,6 @@ textarea {
 
     .div-img {
         display: none;
-    }
-
-    main {
-        height: 350px;
     }
 
     .works {
@@ -802,6 +820,10 @@ textarea {
     .head3 {
         position: absolute;
         margin-top: 320px;
+    }
+
+    .flex-c-2 {
+        justify-content: center;
     }
 
 }
@@ -867,6 +889,8 @@ textarea {
     .footer {
         padding-bottom: 100px;
     }
+
+
 }
 
 .list-mobile-container img:hover {
@@ -876,7 +900,7 @@ textarea {
 
 @media screen and (max-width:640px) {
     .bola {
-        background-image: url('./images/desktop-preview-bank.jpg');
+
         background-repeat: no-repeat;
         background-size: cover;
         height: 20rem;
@@ -890,6 +914,10 @@ textarea {
     .btns {
         margin-top: 350px;
     }
+
+    /* .avatar-img{
+        width: 250px;
+    } */
 }
 
 @media screen and (max-width:618px) {
@@ -903,7 +931,7 @@ textarea {
     main {
         width: 95%;
         margin-left: 3%;
-        height: 500px;
+
     }
 
     .section-container {
@@ -959,19 +987,20 @@ textarea {
         justify-content: center;
         margin: 0;
     }
-}
 
-@media screen and (max-width:500px) {
     .name {
         font-size: 30px;
     }
-    .div-text{
+
+    .div-text {
         margin-top: -160px;
     }
-    .resume{
+
+    .resume {
         line-height: 50px;
     }
 }
+
 
 @media screen and (max-width:400px) {
     .resume {

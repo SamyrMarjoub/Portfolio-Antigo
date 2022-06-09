@@ -4,7 +4,6 @@ let totaln = 0
 let totale = 0
 const nome = document.querySelector('#nome')
 const email = document.querySelector('#email')
-const img = document.querySelector('.preview-img')
 const title = document.querySelector('.title')
 const desc = document.querySelector('.desc')
 const linkbtn = document.querySelector('.link-button')
@@ -15,9 +14,11 @@ const endresume = document.querySelector('.end-resume')
 const msg = document.querySelector('#msg')
 const innerCarac = document.querySelector('.caractere')
 const mobileimg = document.querySelector('.bola')
-const buttone = document.querySelector('.buttone').addEventListener('click', function(){
+const text = document.querySelector('.text')
+const buttone = document.querySelector('.buttone').addEventListener('click', function () {
+
     window.scrollTo(0, 3100)
-    
+
 })
 const workmobile = document.querySelector('.work-mobile').addEventListener('click', function () {
     window.scrollTo(0, 800)
@@ -58,26 +59,27 @@ const butao = document.querySelector('.btn1').addEventListener('click', function
         contador = 1
     }
     if (contador == 1) {
-        img.setAttribute('src', './images/desktop-preview-fylo.jpg')
-        title.innerHTML = "Fylo Landing Page"
-        desc.innerHTML = "Landing Page"
-        linkbtn.setAttribute('href', "https://samyrmarjoub.github.io/Fylo-dark-theme/")
-        mobileimg.style.backgroundImage = "url('./images/desktop-preview-fylo.jpg')"
+        title.innerHTML = "Planet Facts Site"
+        desc.innerHTML = "WebPage"
+        linkbtn.setAttribute('href', "https://samyrmarjoub.github.io/PLANET-FACTS/")
+        mobileimg.style.backgroundImage = "url('./images/terra.jpg')"
+        text.innerHTML = 'Um Projeto pessoal de uma página contando os fatos sobre todos os planetas do nosso sistema solar. A página está Full-Responsiva e foi feita usando NodeJS(Express), CSS e Javascript. Desafio do site frontendmentor.'
     }
     if (contador == 2) {
-        img.setAttribute('src', './images/desktop-preview-sunny.jpg')
         title.innerHTML = "SuunySide Landing Page"
         desc.innerHTML = "Landing Page"
         linkbtn.setAttribute('href', "https://samyrmarjoub.github.io/SuunySide-Page/")
         mobileimg.style.backgroundImage = "url('./images/desktop-preview-sunny.jpg')"
-
+        text.innerHTML = 'Um Projeto pessoal de uma landing Page criada puramente com HTML, CSS E JS com o intuito de por em prática minhas habilidades. O projeto é um desafio de FrontEnd do site FrontEnd Mentor.'
     }
     if (contador == 3) {
-        img.setAttribute('src', './images/desktop-preview-bank.jpg')
         title.innerHTML = "Digital bank Website"
         desc.innerHTML = "Landing Page"
         linkbtn.setAttribute('href', "https://samyrmarjoub.github.io/easyBANK-landing-page/")
         mobileimg.style.backgroundImage = "url('./images/desktop-preview-bank.jpg')"
+        text.innerHTML = 'Um Projeto pessoal de uma landing Page criada puramente com HTML, CSS E JS com o intuito de por em prática minhas habilidades. O projeto é um desafio de FrontEnd do site FrontEnd Mentor.'
+
+
     }
 })
 const cont = document.querySelector('.cont')
@@ -90,26 +92,26 @@ const butao2 = document.querySelector('.btn2').addEventListener('click', functio
         contador = 3
     }
     if (contador == 1) {
-        img.setAttribute('src', './images/desktop-preview-fylo.jpg')
-        title.innerHTML = "Fylo Landing Page"
-        desc.innerHTML = "Landing Page"
-        linkbtn.setAttribute('href', "https://samyrmarjoub.github.io/Fylo-dark-theme/")
-        mobileimg.style.backgroundImage = "url('./images/desktop-preview-fylo.jpg')"
+        title.innerHTML = "Planet Facts Site"
+        desc.innerHTML = "WebPage"
+        linkbtn.setAttribute('href', "https://samyrmarjoub.github.io/PLANET-FACTS/")
+        mobileimg.style.backgroundImage = "url('./images/terra.jpg')"
+        text.innerHTML = 'Um Projeto pessoal de uma página contando os fatos sobre todos os planetas do nosso sistema solar. A página está Full-Responsiva e foi feita usando NodeJS(Express), CSS e Javascript. Desafio do site frontendmentor.'
     }
     if (contador == 2) {
-        img.setAttribute('src', './images/desktop-preview-sunny.jpg')
         title.innerHTML = "SuunySide Landing Page"
         desc.innerHTML = "Landing Page"
         linkbtn.setAttribute('href', "https://samyrmarjoub.github.io/SuunySide-Page/")
         mobileimg.style.backgroundImage = "url('./images/desktop-preview-sunny.jpg')"
+        text.innerHTML = 'Um Projeto pessoal de uma landing Page criada puramente com HTML, CSS E JS com o intuito de por em prática minhas habilidades. O projeto é um desafio de FrontEnd do site FrontEnd Mentor.'
 
     }
     if (contador == 3) {
-        img.setAttribute('src', './images/desktop-preview-bank.jpg')
         title.innerHTML = "Digital bank Website"
         desc.innerHTML = "Landing Page "
         linkbtn.setAttribute('href', "https://samyrmarjoub.github.io/easyBANK-landing-page/")
         mobileimg.style.backgroundImage = "url('./images/desktop-preview-bank.jpg')"
+        text.innerHTML = 'Um Projeto pessoal de uma landing Page criada puramente com HTML, CSS E JS com o intuito de por em prática minhas habilidades. O projeto é um desafio de FrontEnd do site FrontEnd Mentor.'
 
     }
 })
