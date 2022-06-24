@@ -2,6 +2,7 @@ let contador = 1
 let totala = 0
 let totaln = 0
 let totale = 0
+let clickado = false
 const nome = document.querySelector('#nome')
 const email = document.querySelector('#email')
 const title = document.querySelector('.title')
@@ -178,7 +179,9 @@ msg.addEventListener('keydown', function (e) {
     } else {
         msg.style.borderLeft = '5px solid red'
     }
-
+    if (clickado && e.keyCode == 8) {
+        msg.style.borderLeft = '5px solid red'
+    }
 
 })
 nome.addEventListener('keydown', function (e) {
@@ -195,16 +198,21 @@ nome.addEventListener('keydown', function (e) {
     } else {
         nome.style.borderLeft = '5px solid red'
     }
+    if (clickado && e.keyCode == 8) {
+        nome.style.borderLeft = '5px solid red'
+    }
 })
-email.addEventListener('keydown', function () {
+email.addEventListener('keydown', function (e) {
     if (email.checkValidity()) {
         email.style.borderLeft = '5px solid #7CFC00'
     } else {
         email.style.borderLeft = '5px solid red'
     }
+    if (clickado && e.keyCode == 8) {
+        email.style.borderLeft = '5px solid red'
+    }
 })
 
-const formbutao = document.querySelector('#submit').addEventListener('click', function () {
-
-})
-
+function doubleClick() {
+    clickado = true
+}
